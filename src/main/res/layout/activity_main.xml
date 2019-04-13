@@ -7,17 +7,47 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/headline"
+        android:id="@+id/headLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Weather in your city: "
+        android:text="@string/headLine"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.035"
+        />
+
+    <TextView
+        android:id="@+id/yourCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/takeGeo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="@string/refreshButton"
+        android:textAllCaps="false"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+    />
 
 </android.support.constraint.ConstraintLayout>

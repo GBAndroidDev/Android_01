@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Прогноз погоды</string>
+    <string name="headLine">Погода в вашем городе</string>
+    <string name="refreshButton">Обновить прогноз</string>
+    <string name="takeGeo">Мы пытаемся определить ваш город</string>
+</resources>
