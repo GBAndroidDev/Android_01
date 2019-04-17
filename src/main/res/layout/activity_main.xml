@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backGround"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,8 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-        />
+        app:layout_constraintVertical_bias="0.035" />
 
     <TextView
         android:id="@+id/yourCity"
@@ -33,8 +33,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        />
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/refreshButton"
@@ -42,12 +41,65 @@
         android:layout_height="50sp"
         android:text="@string/refreshButton"
         android:textAllCaps="false"
-        tools:ignore="MissingConstraints"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
-    />
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/weatherImageStatus"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".31"
+        app:layout_constraintHorizontal_bias=".7"
+        />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="120sp"
+        android:layout_height="100sp"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".31"
+        app:layout_constraintHorizontal_bias=".2"
+        />
+
+    <TextView
+        android:id="@+id/tempUnitFormat"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".30"
+        app:layout_constraintHorizontal_bias=".50"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:textSize="32sp"
+        android:text="Чт, 20 апреля"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".19"
+        app:layout_constraintHorizontal_bias=".50"
+        />
 
 </android.support.constraint.ConstraintLayout>

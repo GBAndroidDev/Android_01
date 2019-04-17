@@ -1,8 +1,12 @@
 package com.example.weather;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,12 +16,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView headLine = findViewById(R.id.headLine);
-        headLine.setText(headLine.getText() + "Vologda");
+        headLine.setText(headLine.getText());
 
-        if (savedInstanceState == null) {
-            headLine.setText(headLine.getText() + "1");
-        } else {
-            headLine.setText(headLine.getText() + "2");
-        }
+        ImageView statusWeatherImage = (ImageView) findViewById(R.id.weatherImageStatus);
+        statusWeatherImage.setImageResource(R.drawable.cloudy);
+
+        TextView temperature = findViewById(R.id.temperature);
+        temperature.setText("+18");
+
+        TextView tempUnitFormat = findViewById(R.id.tempUnitFormat);
+        tempUnitFormat.setText("ºC");
     }
 }
